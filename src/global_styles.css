@@ -1,0 +1,85 @@
+@import '@angular/material/prebuilt-themes/purple-green.css';
+
+:root {
+  --primary-purple: #6a1b9a;
+  --secondary-teal: #00796b;
+  --accent-pink: #ad1457;
+  --accent-orange: #e65100;
+  --background-dark: #1a1a1a;
+  --text-light: #ffffff;
+}
+
+body {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-dark);
+  color: var(--text-light);
+}
+
+.container {
+  padding: 20px;
+}
+
+.mat-toolbar {
+  background: linear-gradient(45deg, var(--primary-purple), var(--secondary-teal));
+  color: var(--text-light);
+}
+
+.content {
+  margin-top: 20px;
+}
+
+.vibrant-card {
+  background: linear-gradient(135deg, var(--primary-purple), var(--accent-pink));
+  color: var(--text-light);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.vibrant-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 8px 30px rgba(106, 27, 154, 0.4);
+}
+
+.mat-raised-button {
+  background: linear-gradient(45deg, var(--primary-purple), var(--accent-pink));
+  color: var(--text-light);
+  transition: all 0.3s ease;
+}
+
+.mat-raised-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(173, 20, 87, 0.4);
+}
+
+.mat-drawer {
+  background: linear-gradient(180deg, var(--primary-purple), var(--accent-pink));
+  color: var(--text-light);
+}
+
+.mat-list-item {
+  color: var(--text-light);
+  transition: all 0.3s ease;
+}
+
+.mat-list-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.05);
+}
+
+.calculator-button {
+  transition: all 0.2s ease;
+}
+
+.calculator-button:active {
+  transform: scale(0.95);
+  background: var(--accent-orange) !important;
+}
+
+.graph-container {
+  width: 100%;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  margin: 20px 0;
+}
